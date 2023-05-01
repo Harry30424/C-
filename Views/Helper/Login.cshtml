@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+@model IEnumerable<MvcHtmlHelpers.Models.User>
+<h2>Login</h2>
+
+<div class="container">
+    <ul>
+        <li>帳號: @ViewBag.id </li>
+        <li>密碼: @ViewBag.password</li>
+    </ul>
+    <div>
+        @*<a href="~/Helper/Index" name="link" class="btn btn-sm btn-default">Back To Login</a>*@
+        @Html.ActionLink("Back To Login", "Index", null, new { name = "link", @class = "btn btn-sm btn-default" })
+    </div>
+</div>
+
